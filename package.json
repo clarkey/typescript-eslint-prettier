@@ -1,0 +1,48 @@
+{
+  "name": "typescript-eslint-prettier",
+  "version": "1.0.0",
+  "description": "A template project for Node with preconfigured TypeScript, ESLint, Prettier, Mocha & Chai",
+  "main": "index.js",
+  "scripts": {
+    "transpile": "tsc",
+    "lint": "eslint --fix --ext .ts ./src",
+    "dev": "ts-node-dev --respawn ./src/index.ts",
+    "build": "npm run lint && npm run transpile",
+    "test": "mocha --require ts-node/register ./src/**/*.test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clarkey/typescript-eslint-prettier.git"
+  },
+  "keywords": [
+    "typescript",
+    "eslint",
+    "prettier",
+    "node"
+  ],
+  "author": "Matt Clarke <matt@clarkey.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clarkey/typescript-eslint-prettier/issues"
+  },
+  "homepage": "https://github.com/clarkey/typescript-eslint-prettier#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.6",
+    "@types/mocha": "^5.2.7",
+    "@typescript-eslint/eslint-plugin": "^2.10.0",
+    "@typescript-eslint/parser": "^2.10.0",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-config-typescript": "^3.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.19.1",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.7.3"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2"
+  }
+}
