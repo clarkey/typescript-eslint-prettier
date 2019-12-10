@@ -6,7 +6,7 @@
   "scripts": {
     "transpile": "tsc",
     "lint": "eslint --fix --ext .ts ./src",
-    "dev": "ts-node-dev --respawn ./src/index.ts",
+    "dev": "ts-node-dev --respawn --no-notify ./src/index.ts",
     "build": "npm run lint && npm run transpile",
     "test": "mocha --require ts-node/register ./src/**/*.test.ts"
   },
